@@ -2,7 +2,7 @@
 
 <!-- MarkdownTOC -->
 
-- [this](#jump1)   
+- [this](#问题1：this)   
 - [call和apply](#jump2)     
 - [内置方法](#jump3)     
 - [闭包](#jump4)     
@@ -11,7 +11,7 @@
 
 <!-- /MarkdownTOC -->
 
-### <span id='jump1'>问题1：this</span>
+### 问题1：this
 
 ```js
 var fullname = 'paul';
