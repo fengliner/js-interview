@@ -1,15 +1,16 @@
-## javascript面试题总结
-
 <!-- MarkdownTOC -->
 
-- [this](#问题1：this)   
-- [call和apply](#jump2)     
-- [内置方法](#jump3)     
-- [闭包](#jump4)     
-- [声明提前](#jump5)     
-- [递归](#jump6)     
+- [javascript面试题总结](#javascript面试题总结)
+  - [this](#问题1：this)   
+  - [call和apply](#问题2：call()和apply())     
+  - [内置方法](#jump3)     
+  - [闭包](#jump4)     
+  - [声明提前](#jump5)     
+  - [递归](#jump6)     
 
 <!-- /MarkdownTOC -->
+
+## javascript面试题总结
 
 ### 问题1：this
 
@@ -40,7 +41,7 @@ console.log(test());
 ```
 **答案：** 代码输出：bryant 和 paul
 
-### <span id='jump2'>问题2：call()和apply()</span>
+### 问题2：call()和apply()
 
 修复前一个问题，让最后一个console.log() 打印输出bryant      
 **答案：**   
