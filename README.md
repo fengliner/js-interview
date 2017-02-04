@@ -1,11 +1,11 @@
 ## javascript面试题总结
 
--[this](#this)
--[call和apply](#call和apply)
--[内置方法](#内置方法)
--[闭包](#闭包)
--[声明提前](#声明提前)
--[递归](#递归)
+- [this](#this)   
+- [call和apply](#call和apply)     
+- [内置方法](#内置方法)     
+- [闭包](#闭包)     
+- [声明提前](#声明提前)     
+- [递归](#递归)     
 
 ### <span id="this">问题1：this</span>
 
