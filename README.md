@@ -1,18 +1,18 @@
 <!-- MarkdownTOC -->
 
 - [javascript面试题总结](#javascript面试题总结)
-  - [this](#问题1：this)   
-  - [call和apply](#call()和apply())     
-  - [创建内置方法](#创建内置方法)     
-  - [闭包](#闭包)     
-  - [声明提前](#声明提前)    
-  - [递归](#递归)     
+  - [this](#this)     
+  - [call和apply](#call和apply)      
+  - [创建内置方法](#创建内置方法)       
+  - [闭包](#闭包)      
+  - [声明提前](#声明提前)     
+  - [递归](#递归)       
 
 <!-- /MarkdownTOC -->
 
 ## javascript面试题总结
 
-### 问题1：this
+### this
 
 ```js
 var fullname = 'paul';
@@ -41,7 +41,7 @@ console.log(test());
 ```
 **答案：** 代码输出：bryant 和 paul
 
-### call()和apply()
+### call和apply
 
 修复前一个问题，让最后一个console.log() 打印输出bryant      
 **答案：**   
