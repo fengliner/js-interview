@@ -1,11 +1,15 @@
 ## javascript面试题总结
 
+<!-- MarkdownTOC -->
+
 - [this](#jump1)   
 - [call和apply](#jump2)     
 - [内置方法](#jump3)     
 - [闭包](#jump4)     
 - [声明提前](#jump5)     
 - [递归](#jump6)     
+
+<!-- /MarkdownTOC -->
 
 ### <span id='jump1'>问题1：this</span>
 
