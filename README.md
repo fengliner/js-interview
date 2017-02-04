@@ -1,6 +1,13 @@
 ## javascript面试题总结
 
-### 问题1：this
+-[this](#this)
+-[call和apply](#call和apply)
+-[内置方法](#内置方法)
+-[闭包](#闭包)
+-[声明提前](#声明提前)
+-[递归](#递归)
+
+### <span id="this">问题1：this</span>
 
 ```js
 var fullname = 'paul';
@@ -29,7 +36,7 @@ console.log(test());
 ```
 **答案：** 代码输出：bryant 和 paul
 
-### 问题2：call()和apply()
+### <span id="call和apply">问题2：call()和apply()</span>
 
 修复前一个问题，让最后一个console.log() 打印输出bryant      
 **答案：**   
@@ -40,7 +47,7 @@ console.log(test.apply(obj.prop))
 ```
 追加提问，call和apply的区别
 
-### 问题3：创建“内置”方法
+### <span id="内置方法">问题3：创建“内置”方法</span>
 
 给String对象定义一个repeatify方法。该方法接收一个整数参数，作为字符串重复的次数，最后返回重复指定次数的字符串。例如：
 
@@ -65,7 +72,7 @@ String.prototype.repeatify = String.prototype.repeatify || function (times) {
 };
 ```
 
-### 问题4: 闭包
+### <span id="闭包">问题4: 闭包</span>
 ```js
 for (var i = 0; i < 3; i++) {
   setTimeout(function() {
@@ -111,7 +118,7 @@ for(var i = 0; i < 3; i++) {
   console.log(5)
 }
 ```
-### 问题5: 声明提前
+### <span id="声明提前">问题5: 声明提前</span>
 
 ```js
 function test() {
@@ -145,7 +152,7 @@ function test() {
 test();
 ```
 
-### 问题6：递归
+### <span id="递归">问题6：递归</span>
 
 ```js
 function test(n) {
