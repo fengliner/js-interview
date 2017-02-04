@@ -6,7 +6,10 @@
   - [创建内置方法](#创建内置方法) 
   - [闭包](#闭包)
   - [声明提前](#声明提前) 
-  - [递归](#递归)      
+  - [递归](#递归)
+  - [bind函数实现](#bind函数实现) 
+  - [once函数](#once函数) 
+  - [数组乱序](#数组乱序) 
 
 <!-- /MarkdownTOC -->
 
@@ -197,6 +200,74 @@ function test3(n) {
 }
 console.log(test3(5))
 ```
+
+### bind函数实现
+
+```js
+Function.prototype.bind = function(context) {
+  let self = this;
+  return function() {
+    return self.apply(context, arguments);
+  }
+}
+
+let obj = {
+  num: 1,
+  getNum: function() {
+    return this.num;
+  }
+};
+
+let objj = {
+  num: 2
+};
+
+console.log(obj.getNum.bind(objj)());  // 2
+```
+
+### once函数
+
+*重点在于执行完一次后将function置为null*
+
+```js
+function once(fn, context) {
+  let result;
+  return function() {
+    if (fn) {
+      result = fn.apply(context || this, arguments);
+      fn = null;
+    }
+    return result;
+  }
+}
+
+var execOnce = once(function() {
+  console.log('exec success');
+});
+
+execOnce();  // "exec success"
+execOnce();  // nothing
+```
+
+### 数组乱序
+
+**又称洗牌**
+
+```js
+function shuffle(a) {
+  var b = [];
+  while(a.length) {
+    var index = Math.floor(Math.random() * a.length);
+    b.push(a[index]);
+    a.splice(index, 1);
+  }
+  return b;
+}
+
+var a = [1,2,3,4,5,6];
+console.log(shuffle(a));  // [6,2,1,5,3,4]
+```
+
 
 
 
